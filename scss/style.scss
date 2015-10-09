@@ -1,0 +1,715 @@
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+$red: #7d3927;
+$fontcolor: #49474d;
+$grey: #d9d9da;
+$orange: #e98300;
+$menu: #1e1d1d;
+$headerfont: "Charter Bold", Arial, sans-serif;
+
+
+.clearfix {
+	position: relative;
+    zoom: 1;
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+/***** SITE STYLES *************/
+/**********************************/
+
+
+body{
+	color: $fontcolor;
+	font-family: "Open Sans", Helvetica, serif;
+	p{
+		margin: 0px;
+	}
+}
+
+h1, h2, h3, h4{
+	font-family: $headerfont;
+	text-transform: uppercase;
+}
+
+h2{
+	background-image: url("../img/pattern.png");
+	background-repeat: repeat-x;
+}
+
+
+.panel {
+	z-index: 11000;
+    position: fixed;
+    left: -15.625em; /*left or right and the width of your navigation panel*/
+    width: 15.625em; /*should match the above value*/
+}
+
+.push {
+    position: relative;
+}
+
+.wrapper{
+	width: 90%;
+	margin: 0 auto;
+}
+
+#menu{
+	background-color: #ccc;
+}
+
+
+
+header, .headertexture{
+	background-image: url("../img/headerbg.png");
+	height: 70px;
+	position: relative;
+	margin-bottom: 5px;
+
+	a{
+		text-decoration: none;
+	}
+
+	a:hover{
+		color: $red;
+	}
+
+	.menu-link{
+		background-color: #1e1d1d;
+		color: white;
+		padding: 10px 20px;
+	    position: absolute;
+	    top: 10px;
+	    left: 15px;
+	}
+
+	.prose, .expungement{
+		padding: 5px;
+		background-color: $orange;
+		color: white;
+	}
+
+	.expungement{
+		position: absolute;
+		right: 10px;
+	    width: 15%;
+	    text-align: center;
+	    font-size: 0.7em;
+	    top: 10px;
+	}
+
+	.prose{
+		position: absolute;
+		right: 125px;
+	    width: 15%;
+	    text-align: center;
+	    font-size: 0.7em;
+	    top: 10px;
+	}
+
+}
+
+nav {
+	a {
+		text-decoration: none;
+		color: $fontcolor;
+		display: block;
+	}
+	ul{
+		list-style: none;
+		padding: 0px;
+	}
+	li{
+		padding: 10px;
+		border-bottom: 1px solid #fff;
+	}
+
+	li:hover{
+		background-color: $red;
+	}
+	a:hover{
+		color: white;
+	}
+}
+
+h2{
+	padding: 10px 0px 10px 25px;
+}
+
+.header2{
+	max-width: 35%;
+	// position: relative;
+	img{
+		width: 100%;
+		margin-left: 10px;
+	}
+	a{
+		text-align: center;
+		background: #d45b18;
+	  	background-image: -webkit-linear-gradient(top, #d45b18, #be390d);
+	  	background-image: -moz-linear-gradient(top, #d45b18, #be390d);
+	  	background-image: -ms-linear-gradient(top, #d45b18, #be390d);
+	 	 background-image: -o-linear-gradient(top, #d45b18, #be390d);
+	 	 background-image: linear-gradient(to bottom, #d45b18, #be390d);
+	  	-webkit-border-radius: 4;
+	  	-moz-border-radius: 4;
+	  	border-radius: 4px;
+	  	color: #ffffff;
+	  	font-size: 20px;
+	  	padding: 15px 40px 15px 40px;
+	  	text-decoration: none;
+	  	position: absolute;
+	    bottom: 4px;
+	    right: 10px;;
+	}
+
+}
+/* Mobile Fatherhood*/
+
+.mainpic, .mainpicdonation{
+	background: url( ../img/fatherhood.jpg );
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	position: relative;
+	margin-top: 5px;
+	padding: 16% 0;
+	// img{
+	// 	width: 100%;
+	// 	position: relative;
+	// }
+
+	h1{
+		// position: absolute;
+		// top: 50px;
+		text-align: center;
+		color: white;
+		width: 100%;
+		margin: 0px;
+		text-shadow: 1px 2px rgba(0,0,0,0.5);
+	}
+	p{
+		// position: absolute;
+		text-align: center;
+		color: white;
+		// bottom: 75px;
+		margin-right: 10px;
+		margin-left: 10px;
+		text-shadow: 1px 2px rgba(0,0,0,0.5);
+	}
+}
+
+.programservices{
+	p{
+		margin-bottom: 10px;
+	}
+}
+
+.greybox{
+	background-color: $grey;
+	padding: 10px 20px 20px 20px;
+	img{
+		display: none;
+	}
+
+	.tablet{
+		display: none;
+	}
+
+	ul{
+		list-style: none;
+		padding: 0px;
+		margin: 0px;
+
+	}
+
+	a{
+		text-decoration: none;
+		color: $red;
+	}
+
+	h3{
+		font-weight: lighter;
+		margin-bottom: 5px;
+	}
+	p{
+		margin: 0px;
+	}
+}
+
+.resources{
+	p{
+		margin: 0px 0px 15px 0px;
+	}
+
+	a{
+		text-decoration: none;
+		color: $red;
+	}
+}
+
+.findprogram{
+	h4{
+		color: white;
+		margin: 0px 0px 15px 0px;
+	}
+	background-image: url("../img/programbg.png");
+	padding: 25px 20px;
+	margin-top: 30px;
+}
+
+.program-nav{
+	padding: 5px 0px;
+    margin: 0;
+    border: 1px solid $grey;
+    width: 100%;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+
+    background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 98% 50%;
+
+	select{
+		padding: 5px 8px;
+	    width: 100%;
+	    border: none;
+	    box-shadow: none;
+	    background-color: transparent;
+	    background-image: none;
+	    -webkit-appearance: none;
+	       -moz-appearance: none;
+	            appearance: none;
+	    cursor: pointer;
+ 	}
+ 	select:focus {
+    	outline: none;
+	}
+
+	a{
+		color: white;
+	}
+}
+
+.about{
+	text-align: center;
+	margin-top: 15px;
+}
+
+.about2, .email2, .donate2{
+	display: none;
+}
+
+.donate, .donate2 {
+	padding-top: 30px;
+	padding-bottom: 25px;
+	margin: 0px 25px;
+	p{
+		display: none;
+	}
+	a{
+		text-align: center;
+		background: #d45b18;
+	  	background-image: -webkit-linear-gradient(top, #d45b18, #be390d);
+	  	background-image: -moz-linear-gradient(top, #d45b18, #be390d);
+	  	background-image: -ms-linear-gradient(top, #d45b18, #be390d);
+	 	background-image: -o-linear-gradient(top, #d45b18, #be390d);
+	 	background-image: linear-gradient(to bottom, #d45b18, #be390d);
+	  	-webkit-border-radius: 4;
+	  	-moz-border-radius: 4;
+	  	border-radius: 4px;
+	  	color: #ffffff;
+	  	padding: 15px 40px 15px 40px;
+	  	text-decoration: none;
+	  	display: block;
+	}
+}
+
+.email, .email2{
+	margin: 0px 25px;
+
+	.emailbutton{
+		 background: #f3a139;
+		  background-image: -webkit-linear-gradient(top, #f3a139, #d48218);
+		  background-image: -moz-linear-gradient(top, #f3a139, #d48218);
+		  background-image: -ms-linear-gradient(top, #f3a139, #d48218);
+		  background-image: -o-linear-gradient(top, #f3a139, #d48218);
+		  background-image: linear-gradient(to bottom, #f3a139, #d48218);
+		  -webkit-border-radius: 3;
+		  -moz-border-radius: 3;
+		  border-radius: 3px;
+		  color: #ffffff;
+		  padding: 15px 25px 15px 25px;
+		  text-decoration: none;
+		  font-size: 0.8em;	  
+		  display: inline-block;
+		  width: 200px;
+		  margin-right: 20px;
+	}
+	.fb, .twitter{
+		display: inline-block;
+		width: 45px;
+		vertical-align: top;
+	}
+
+	.fb{
+		margin-right: 10px;
+	}
+
+	img{
+		width: 100%;
+
+	}
+}
+
+.address{
+	display: inline-block;
+	margin: 0px 25px;
+	ul{
+		list-style: none;
+		padding: 0px;
+	}
+}
+
+.footer-nav{
+	display: inline-block;
+    margin-left: 30px;
+	li{
+		padding: 0px;
+		border-bottom: none;
+	}
+}
+
+.legal{
+	margin: 0px 25px;
+	margin-top: 15px;
+	p{
+		margin-bottom: 10px;
+		font-size: 0.7em;
+	}
+}
+
+
+
+/***** mobile donation page ************/
+/**********************************/
+
+
+.headertexture{
+	height: 30px;
+	margin-bottom: 0px;
+}
+.mainpicdonation{
+	background: url("../img/donate.jpg");
+	margin-top: 0px;
+	p{
+		font-size: 1.5em;
+	}
+}
+
+.pageinfo{
+	p{
+		margin-top: 30px;
+	}
+}
+
+.donation{
+	input{
+		width: 95%;
+		margin: 5px 0px;
+	}
+}
+
+select{
+	width: 100%;
+	margin: 5px 0px;
+}
+
+input{
+	width: 100%;
+	margin: 5px 0px;
+	height: 20px;
+}
+
+input[type="radio"]{
+	width: 5%;
+	margin: 5px 0px 0px 20px;
+}
+
+form{
+	p{
+		margin-top: 10px;
+	}
+
+	.exp{
+		width: 75%;
+	}
+}
+
+.checks{
+	p:first-child{
+		margin-top: 20px;
+	}
+
+	ul{
+		list-style: none;
+		padding: 0px;
+		margin-top: 0px;
+	}
+}
+
+.ty{
+	a{
+		color: $red;
+		text-decoration: none;
+	}
+
+	p{
+	margin-bottom: 30px;
+	}
+}
+
+.submit{
+	background: #d45b18;
+	  	background-image: -webkit-linear-gradient(top, #d45b18, #be390d);
+	  	background-image: -moz-linear-gradient(top, #d45b18, #be390d);
+	  	background-image: -ms-linear-gradient(top, #d45b18, #be390d);
+	 	 background-image: -o-linear-gradient(top, #d45b18, #be390d);
+	 	 background-image: linear-gradient(to bottom, #d45b18, #be390d);
+	  	-webkit-border-radius: 4;
+	  	-moz-border-radius: 4;
+	  	border-radius: 4px;
+	  	color: #ffffff;
+	  	font-size: 20px;
+	  	padding: 15px 40px 40px 40px;
+	  	border: none;
+	  	margin-top: 30px;
+}
+
+
+
+/* Tablet Fatherhood */
+
+@media (min-width: 600px) {
+	h2{
+		padding: 10px 0px 10px 45px;
+	}
+	.greybox{
+		img{
+			display: inline-block;
+			vertical-align: top;
+			margin-top: 25px;
+			margin-right: 10px;
+		}
+
+		.mobileonly{
+			display: none;
+		}
+
+		.tablet{
+			display: block;
+		}
+		div{
+			display: inline-block;
+			width: 63%;
+			margin-top: 25px;
+		}
+
+		h3{
+			margin: 0px;
+		}
+	}
+	header{
+		.prose, .expungement{
+			width: 10%;
+		}
+	}
+	.header2 {
+    	max-width: 25%;
+	}
+
+	.mainpic{
+		p{
+			margin: 0px 20px;
+		}
+	}
+
+	.findprogram{
+		display: inline-block;
+		width: 45%;
+		border: 2px solid $grey;
+		border-left: none;
+		padding: 45px 20px;
+	}
+	.donate{
+		width: 45%;
+    	display: inline-block;
+    	margin: 0px 0px 0px -4px;
+    	border: 2px solid $grey;
+    	border-left: none;
+    	border-right: none;
+    	padding: 28px 12px 25px 12.2px;
+		p{
+			display: block;
+			margin-bottom: 10px;
+		}
+	}
+
+	.about, .email{
+		display: none;
+	}
+
+	.about2{
+		display: inline-block;
+		border-right: 2px solid $grey;
+		border-bottom: 2px solid $grey;
+    	padding: 20px;
+    	width: 45%;
+    	padding-top: 41px;
+	}
+
+	.email2{
+		display: block;
+		width: 45%;
+		float: right;
+		margin: 0px;
+		margin-right: 20px;
+
+		.fb, .twitter{
+			width: 30px;
+		}
+		.emailbutton{
+			padding: 7px 25px 7px 25px;
+		}
+	}
+
+	.contact{
+		display: inline-block;
+		font-size: 0.8em;
+		.address{
+			margin: 0px 20px;
+		}
+	}
+
+	.legal{
+		border-right: 2px solid $grey;
+		display: inline-block;
+	    width: 45%;
+	    margin: 0px;
+	    padding: 10px 30px 10px 10px;
+	}
+}
+
+/* desktop fatherhood */
+@media (min-width: 900px) {
+	.content {
+		max-width: 900px;
+		background-color: white;
+		margin: 0 auto;
+	}
+	body{
+		background-image: url("../img/background.jpg");
+		background-repeat: repeat;
+	}
+
+	.greybox{
+		margin-bottom: 30px;
+		article{
+			display: inline-block;
+			width: 32.9%;
+    		vertical-align: top;
+
+		}
+
+		p, a, li{
+			font-size: .8em;
+		}
+	}
+
+	.donate{
+		display: none;
+	}
+
+	.donate2{
+		display: inline-block;
+		width: 40%;
+		margin: 0px;
+		vertical-align: bottom;
+		text-align: center;
+		padding: 77px 61px 96px 28px;
+		border: 2px solid $grey;
+		border-bottom: none;
+		border-right: none;
+		p{
+			display: inline-block;
+			font-size: 1.5em;
+		}
+		a{
+			margin-top: 30px;
+			width: 36%;
+			display: inline-block;
+		}
+	}
+
+	.findprogram{
+		margin-top: 0px;
+		border-top: none;
+		border-bottom: none;
+	}
+	footer{
+		position: relative;
+		border-top: 2px solid $grey;
+	}
+
+	.resourcesfooter{
+		width: 49%;
+		display: inline-block;
+		.texture{
+			width: 101%;
+			border-top: 2px solid $grey;
+		}
+		h2{
+			margin-top: 0px;
+		}
+	}
+	.email2{
+		float: none;
+		margin-right: -15px;
+		margin-left: 0px;
+		// border-bottom: 2px solid $grey;
+		position: absolute;
+		right: 48px;
+		top: 109px;
+	}
+	.contact{
+		float: none;
+		position: absolute;
+		right: 103px;
+		top: 10px;
+		// border-top: 2px solid $grey;
+		margin: 0px;
+	}
+
+	.about2{
+		display: block;
+		border-right: none;
+		border-top: 2px solid $grey;
+		padding-right: 100%;
+		padding-bottom: 50px;
+	}
+
+	.legal{
+		border-right: none;
+		float: none;
+		position: absolute;
+		right: 0px;
+		bottom: 25px;
+	}
+}
+
+
+

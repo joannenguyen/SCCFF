@@ -1,0 +1,752 @@
+/***** CLEARFIX is applied to the parent of floated elements *************/
+/*************************************************************************/
+/* line 11, ../scss/style.scss */
+.clearfix {
+  position: relative;
+  zoom: 1;
+}
+/* line 14, ../scss/style.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 18, ../scss/style.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/***** SITE STYLES *************/
+/**********************************/
+/* line 27, ../scss/style.scss */
+body {
+  color: #49474d;
+  font-family: "Open Sans", Helvetica, serif;
+}
+/* line 30, ../scss/style.scss */
+body p {
+  margin: 0px;
+}
+
+/* line 35, ../scss/style.scss */
+h1, h2, h3, h4 {
+  font-family: "Charter Bold", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 40, ../scss/style.scss */
+h2 {
+  background-image: url("../img/pattern.png");
+  background-repeat: repeat-x;
+}
+
+/* line 46, ../scss/style.scss */
+.panel {
+  z-index: 11000;
+  position: fixed;
+  left: -15.625em;
+  /*left or right and the width of your navigation panel*/
+  width: 15.625em;
+  /*should match the above value*/
+}
+
+/* line 53, ../scss/style.scss */
+.push {
+  position: relative;
+}
+
+/* line 57, ../scss/style.scss */
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 62, ../scss/style.scss */
+#menu {
+  background-color: #ccc;
+}
+
+/* line 68, ../scss/style.scss */
+header, .headertexture {
+  background-image: url("../img/headerbg.png");
+  height: 70px;
+  position: relative;
+  margin-bottom: 5px;
+}
+/* line 74, ../scss/style.scss */
+header a, .headertexture a {
+  text-decoration: none;
+}
+/* line 78, ../scss/style.scss */
+header a:hover, .headertexture a:hover {
+  color: #7d3927;
+}
+/* line 82, ../scss/style.scss */
+header .menu-link, .headertexture .menu-link {
+  background-color: #1e1d1d;
+  color: white;
+  padding: 10px 20px;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+/* line 91, ../scss/style.scss */
+header .prose, header .expungement, .headertexture .prose, .headertexture .expungement {
+  padding: 5px;
+  background-color: #e98300;
+  color: white;
+}
+/* line 97, ../scss/style.scss */
+header .expungement, .headertexture .expungement {
+  position: absolute;
+  right: 10px;
+  width: 15%;
+  text-align: center;
+  font-size: 0.7em;
+  top: 10px;
+}
+/* line 106, ../scss/style.scss */
+header .prose, .headertexture .prose {
+  position: absolute;
+  right: 125px;
+  width: 15%;
+  text-align: center;
+  font-size: 0.7em;
+  top: 10px;
+}
+
+/* line 118, ../scss/style.scss */
+nav a {
+  text-decoration: none;
+  color: #49474d;
+  display: block;
+}
+/* line 123, ../scss/style.scss */
+nav ul {
+  list-style: none;
+  padding: 0px;
+}
+/* line 127, ../scss/style.scss */
+nav li {
+  padding: 10px;
+  border-bottom: 1px solid #fff;
+}
+/* line 132, ../scss/style.scss */
+nav li:hover {
+  background-color: #7d3927;
+}
+/* line 135, ../scss/style.scss */
+nav a:hover {
+  color: white;
+}
+
+/* line 140, ../scss/style.scss */
+h2 {
+  padding: 10px 0px 10px 25px;
+}
+
+/* line 144, ../scss/style.scss */
+.header2 {
+  max-width: 35%;
+}
+/* line 147, ../scss/style.scss */
+.header2 img {
+  width: 100%;
+  margin-left: 10px;
+}
+/* line 151, ../scss/style.scss */
+.header2 a {
+  text-align: center;
+  background: #d45b18;
+  background-image: -webkit-linear-gradient(top, #d45b18, #be390d);
+  background-image: -moz-linear-gradient(top, #d45b18, #be390d);
+  background-image: -ms-linear-gradient(top, #d45b18, #be390d);
+  background-image: -o-linear-gradient(top, #d45b18, #be390d);
+  background-image: linear-gradient(to bottom, #d45b18, #be390d);
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 15px 40px 15px 40px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 4px;
+  right: 10px;
+}
+
+/* Mobile Fatherhood*/
+/* line 174, ../scss/style.scss */
+.mainpic, .mainpicdonation {
+  background: url(../img/fatherhood.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  position: relative;
+  margin-top: 5px;
+  padding: 16% 0;
+}
+/* line 187, ../scss/style.scss */
+.mainpic h1, .mainpicdonation h1 {
+  text-align: center;
+  color: white;
+  width: 100%;
+  margin: 0px;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.5);
+}
+/* line 196, ../scss/style.scss */
+.mainpic p, .mainpicdonation p {
+  text-align: center;
+  color: white;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* line 208, ../scss/style.scss */
+.programservices p {
+  margin-bottom: 10px;
+}
+
+/* line 213, ../scss/style.scss */
+.greybox {
+  background-color: #d9d9da;
+  padding: 10px 20px 20px 20px;
+}
+/* line 216, ../scss/style.scss */
+.greybox img {
+  display: none;
+}
+/* line 220, ../scss/style.scss */
+.greybox .tablet {
+  display: none;
+}
+/* line 224, ../scss/style.scss */
+.greybox ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+/* line 231, ../scss/style.scss */
+.greybox a {
+  text-decoration: none;
+  color: #7d3927;
+}
+/* line 236, ../scss/style.scss */
+.greybox h3 {
+  font-weight: lighter;
+  margin-bottom: 5px;
+}
+/* line 240, ../scss/style.scss */
+.greybox p {
+  margin: 0px;
+}
+
+/* line 246, ../scss/style.scss */
+.resources p {
+  margin: 0px 0px 15px 0px;
+}
+/* line 250, ../scss/style.scss */
+.resources a {
+  text-decoration: none;
+  color: #7d3927;
+}
+
+/* line 256, ../scss/style.scss */
+.findprogram {
+  background-image: url("../img/programbg.png");
+  padding: 25px 20px;
+  margin-top: 30px;
+}
+/* line 257, ../scss/style.scss */
+.findprogram h4 {
+  color: white;
+  margin: 0px 0px 15px 0px;
+}
+
+/* line 266, ../scss/style.scss */
+.program-nav {
+  padding: 5px 0px;
+  margin: 0;
+  border: 1px solid #d9d9da;
+  width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: #fff;
+  background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 98% 50%;
+}
+/* line 277, ../scss/style.scss */
+.program-nav select {
+  padding: 5px 8px;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+/* line 289, ../scss/style.scss */
+.program-nav select:focus {
+  outline: none;
+}
+/* line 293, ../scss/style.scss */
+.program-nav a {
+  color: white;
+}
+
+/* line 298, ../scss/style.scss */
+.about {
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* line 303, ../scss/style.scss */
+.about2, .email2, .donate2 {
+  display: none;
+}
+
+/* line 307, ../scss/style.scss */
+.donate, .donate2 {
+  padding-top: 30px;
+  padding-bottom: 25px;
+  margin: 0px 25px;
+}
+/* line 311, ../scss/style.scss */
+.donate p, .donate2 p {
+  display: none;
+}
+/* line 314, ../scss/style.scss */
+.donate a, .donate2 a {
+  text-align: center;
+  background: #d45b18;
+  background-image: -webkit-linear-gradient(top, #d45b18, #be390d);
+  background-image: -moz-linear-gradient(top, #d45b18, #be390d);
+  background-image: -ms-linear-gradient(top, #d45b18, #be390d);
+  background-image: -o-linear-gradient(top, #d45b18, #be390d);
+  background-image: linear-gradient(to bottom, #d45b18, #be390d);
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 15px 40px 15px 40px;
+  text-decoration: none;
+  display: block;
+}
+
+/* line 332, ../scss/style.scss */
+.email, .email2 {
+  margin: 0px 25px;
+}
+/* line 335, ../scss/style.scss */
+.email .emailbutton, .email2 .emailbutton {
+  background: #f3a139;
+  background-image: -webkit-linear-gradient(top, #f3a139, #d48218);
+  background-image: -moz-linear-gradient(top, #f3a139, #d48218);
+  background-image: -ms-linear-gradient(top, #f3a139, #d48218);
+  background-image: -o-linear-gradient(top, #f3a139, #d48218);
+  background-image: linear-gradient(to bottom, #f3a139, #d48218);
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  color: #ffffff;
+  padding: 15px 25px 15px 25px;
+  text-decoration: none;
+  font-size: 0.8em;
+  display: inline-block;
+  width: 200px;
+  margin-right: 20px;
+}
+/* line 353, ../scss/style.scss */
+.email .fb, .email .twitter, .email2 .fb, .email2 .twitter {
+  display: inline-block;
+  width: 45px;
+  vertical-align: top;
+}
+/* line 359, ../scss/style.scss */
+.email .fb, .email2 .fb {
+  margin-right: 10px;
+}
+/* line 363, ../scss/style.scss */
+.email img, .email2 img {
+  width: 100%;
+}
+
+/* line 369, ../scss/style.scss */
+.address {
+  display: inline-block;
+  margin: 0px 25px;
+}
+/* line 372, ../scss/style.scss */
+.address ul {
+  list-style: none;
+  padding: 0px;
+}
+
+/* line 378, ../scss/style.scss */
+.footer-nav {
+  display: inline-block;
+  margin-left: 30px;
+}
+/* line 381, ../scss/style.scss */
+.footer-nav li {
+  padding: 0px;
+  border-bottom: none;
+}
+
+/* line 387, ../scss/style.scss */
+.legal {
+  margin: 0px 25px;
+  margin-top: 15px;
+}
+/* line 390, ../scss/style.scss */
+.legal p {
+  margin-bottom: 10px;
+  font-size: 0.7em;
+}
+
+/***** mobile donation page ************/
+/**********************************/
+/* line 402, ../scss/style.scss */
+.headertexture {
+  height: 30px;
+  margin-bottom: 0px;
+}
+
+/* line 406, ../scss/style.scss */
+.mainpicdonation {
+  background: url("../img/donate.jpg");
+  margin-top: 0px;
+}
+/* line 409, ../scss/style.scss */
+.mainpicdonation p {
+  font-size: 1.5em;
+}
+
+/* line 415, ../scss/style.scss */
+.pageinfo p {
+  margin-top: 30px;
+}
+
+/* line 421, ../scss/style.scss */
+.donation input {
+  width: 95%;
+  margin: 5px 0px;
+}
+
+/* line 427, ../scss/style.scss */
+select {
+  width: 100%;
+  margin: 5px 0px;
+}
+
+/* line 432, ../scss/style.scss */
+input {
+  width: 100%;
+  margin: 5px 0px;
+  height: 20px;
+}
+
+/* line 438, ../scss/style.scss */
+input[type="radio"] {
+  width: 5%;
+  margin: 5px 0px 0px 20px;
+}
+
+/* line 444, ../scss/style.scss */
+form p {
+  margin-top: 10px;
+}
+/* line 448, ../scss/style.scss */
+form .exp {
+  width: 75%;
+}
+
+/* line 454, ../scss/style.scss */
+.checks p:first-child {
+  margin-top: 20px;
+}
+/* line 458, ../scss/style.scss */
+.checks ul {
+  list-style: none;
+  padding: 0px;
+  margin-top: 0px;
+}
+
+/* line 466, ../scss/style.scss */
+.ty a {
+  color: #7d3927;
+  text-decoration: none;
+}
+/* line 471, ../scss/style.scss */
+.ty p {
+  margin-bottom: 30px;
+}
+
+/* line 476, ../scss/style.scss */
+.submit {
+  background: #d45b18;
+  background-image: -webkit-linear-gradient(top, #d45b18, #be390d);
+  background-image: -moz-linear-gradient(top, #d45b18, #be390d);
+  background-image: -ms-linear-gradient(top, #d45b18, #be390d);
+  background-image: -o-linear-gradient(top, #d45b18, #be390d);
+  background-image: linear-gradient(to bottom, #d45b18, #be390d);
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 15px 40px 40px 40px;
+  border: none;
+  margin-top: 30px;
+}
+
+/* Tablet Fatherhood */
+@media (min-width: 600px) {
+  /* line 498, ../scss/style.scss */
+  h2 {
+    padding: 10px 0px 10px 45px;
+  }
+
+  /* line 502, ../scss/style.scss */
+  .greybox img {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 25px;
+    margin-right: 10px;
+  }
+  /* line 509, ../scss/style.scss */
+  .greybox .mobileonly {
+    display: none;
+  }
+  /* line 513, ../scss/style.scss */
+  .greybox .tablet {
+    display: block;
+  }
+  /* line 516, ../scss/style.scss */
+  .greybox div {
+    display: inline-block;
+    width: 63%;
+    margin-top: 25px;
+  }
+  /* line 522, ../scss/style.scss */
+  .greybox h3 {
+    margin: 0px;
+  }
+
+  /* line 527, ../scss/style.scss */
+  header .prose, header .expungement {
+    width: 10%;
+  }
+
+  /* line 531, ../scss/style.scss */
+  .header2 {
+    max-width: 25%;
+  }
+
+  /* line 536, ../scss/style.scss */
+  .mainpic p {
+    margin: 0px 20px;
+  }
+
+  /* line 541, ../scss/style.scss */
+  .findprogram {
+    display: inline-block;
+    width: 45%;
+    border: 2px solid #d9d9da;
+    border-left: none;
+    padding: 45px 20px;
+  }
+
+  /* line 548, ../scss/style.scss */
+  .donate {
+    width: 45%;
+    display: inline-block;
+    margin: 0px 0px 0px -4px;
+    border: 2px solid #d9d9da;
+    border-left: none;
+    border-right: none;
+    padding: 28px 12px 25px 12.2px;
+  }
+  /* line 556, ../scss/style.scss */
+  .donate p {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  /* line 562, ../scss/style.scss */
+  .about, .email {
+    display: none;
+  }
+
+  /* line 566, ../scss/style.scss */
+  .about2 {
+    display: inline-block;
+    border-right: 2px solid #d9d9da;
+    border-bottom: 2px solid #d9d9da;
+    padding: 20px;
+    width: 45%;
+    padding-top: 41px;
+  }
+
+  /* line 575, ../scss/style.scss */
+  .email2 {
+    display: block;
+    width: 45%;
+    float: right;
+    margin: 0px;
+    margin-right: 20px;
+  }
+  /* line 582, ../scss/style.scss */
+  .email2 .fb, .email2 .twitter {
+    width: 30px;
+  }
+  /* line 585, ../scss/style.scss */
+  .email2 .emailbutton {
+    padding: 7px 25px 7px 25px;
+  }
+
+  /* line 590, ../scss/style.scss */
+  .contact {
+    display: inline-block;
+    font-size: 0.8em;
+  }
+  /* line 593, ../scss/style.scss */
+  .contact .address {
+    margin: 0px 20px;
+  }
+
+  /* line 598, ../scss/style.scss */
+  .legal {
+    border-right: 2px solid #d9d9da;
+    display: inline-block;
+    width: 45%;
+    margin: 0px;
+    padding: 10px 30px 10px 10px;
+  }
+}
+/* desktop fatherhood */
+@media (min-width: 900px) {
+  /* line 609, ../scss/style.scss */
+  .content {
+    max-width: 900px;
+    background-color: white;
+    margin: 0 auto;
+  }
+
+  /* line 614, ../scss/style.scss */
+  body {
+    background-image: url("../img/background.jpg");
+    background-repeat: repeat;
+  }
+
+  /* line 619, ../scss/style.scss */
+  .greybox {
+    margin-bottom: 30px;
+  }
+  /* line 621, ../scss/style.scss */
+  .greybox article {
+    display: inline-block;
+    width: 32.9%;
+    vertical-align: top;
+  }
+  /* line 628, ../scss/style.scss */
+  .greybox p, .greybox a, .greybox li {
+    font-size: .8em;
+  }
+
+  /* line 633, ../scss/style.scss */
+  .donate {
+    display: none;
+  }
+
+  /* line 637, ../scss/style.scss */
+  .donate2 {
+    display: inline-block;
+    width: 40%;
+    margin: 0px;
+    vertical-align: bottom;
+    text-align: center;
+    padding: 77px 61px 96px 28px;
+    border: 2px solid #d9d9da;
+    border-bottom: none;
+    border-right: none;
+  }
+  /* line 647, ../scss/style.scss */
+  .donate2 p {
+    display: inline-block;
+    font-size: 1.5em;
+  }
+  /* line 651, ../scss/style.scss */
+  .donate2 a {
+    margin-top: 30px;
+    width: 36%;
+    display: inline-block;
+  }
+
+  /* line 658, ../scss/style.scss */
+  .findprogram {
+    margin-top: 0px;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  /* line 663, ../scss/style.scss */
+  footer {
+    position: relative;
+    border-top: 2px solid #d9d9da;
+  }
+
+  /* line 668, ../scss/style.scss */
+  .resourcesfooter {
+    width: 49%;
+    display: inline-block;
+  }
+  /* line 671, ../scss/style.scss */
+  .resourcesfooter .texture {
+    width: 101%;
+    border-top: 2px solid #d9d9da;
+  }
+  /* line 675, ../scss/style.scss */
+  .resourcesfooter h2 {
+    margin-top: 0px;
+  }
+
+  /* line 679, ../scss/style.scss */
+  .email2 {
+    float: none;
+    margin-right: -15px;
+    margin-left: 0px;
+    position: absolute;
+    right: 48px;
+    top: 109px;
+  }
+
+  /* line 688, ../scss/style.scss */
+  .contact {
+    float: none;
+    position: absolute;
+    right: 103px;
+    top: 10px;
+    margin: 0px;
+  }
+
+  /* line 697, ../scss/style.scss */
+  .about2 {
+    display: block;
+    border-right: none;
+    border-top: 2px solid #d9d9da;
+    padding-right: 100%;
+    padding-bottom: 50px;
+  }
+
+  /* line 705, ../scss/style.scss */
+  .legal {
+    border-right: none;
+    float: none;
+    position: absolute;
+    right: 0px;
+    bottom: 25px;
+  }
+}
