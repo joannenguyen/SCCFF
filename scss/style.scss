@@ -63,6 +63,32 @@ h2{
 	background-color: #ccc;
 }
 
+.newsearch{
+	.tftextinput{
+		margin: 0px;
+		padding: 5px 15px;
+		border: 1px solid $grey; border-right: 0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+		width: 120px;
+	}
+	.tfbutton{
+		margin: 0px;
+		padding: 5px 15px;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		border: 1px solid $grey; border-right: 0px;
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+		font-size: 1em;
+		height: 32px;
+		vertical-align: top;
+
+	}
+	
+}
+
 
 
 header, .headertexture{
@@ -139,6 +165,7 @@ nav {
 
 h2{
 	padding: 10px 0px 10px 25px;
+	margin-top: 30px;
 }
 
 .header2{
@@ -161,7 +188,7 @@ h2{
 	  	border-radius: 4px;
 	  	color: #ffffff;
 	  	font-size: 20px;
-	  	padding: 15px 40px 15px 40px;
+	  	padding: 10px 40px 10px 40px;
 	  	text-decoration: none;
 	  	position: absolute;
 	    bottom: 4px;
@@ -171,7 +198,7 @@ h2{
 }
 /* Mobile Fatherhood*/
 
-.mainpic, .mainpicdonation{
+.mainpic, .mainpicfamilies, .mainpicdonation{
 	background: url( ../img/fatherhood.jpg );
 	background-size: cover;
 	background-position: center center;
@@ -256,7 +283,7 @@ h2{
 .findprogram{
 	h4{
 		color: white;
-		margin: 0px 0px 15px 0px;
+		margin: 0px 0px 6px 0px;
 	}
 	background-image: url("../img/programbg.png");
 	padding: 25px 20px;
@@ -406,6 +433,7 @@ h2{
 .mainpicdonation{
 	background: url("../img/donate.jpg");
 	margin-top: 0px;
+	background-size: cover;
 	p{
 		font-size: 1.5em;
 	}
@@ -414,6 +442,7 @@ h2{
 .pageinfo{
 	p{
 		margin-top: 30px;
+		margin-bottom: 30px;
 	}
 }
 
@@ -422,7 +451,11 @@ h2{
 		width: 95%;
 		margin: 5px 0px;
 	}
+	.dollarsign{
+		display: inline-block;
+	}
 }
+
 
 select{
 	width: 100%;
@@ -490,6 +523,190 @@ form{
 	  	margin-top: 30px;
 }
 
+.payment{
+	br{
+		display: none;
+	}
+}
+
+.cd-hero{
+	overflow: hidden;
+
+	.cd-hero-slider{
+		position: relative;
+		width: 300%;
+		list-style: none;
+		margin: 0;
+		padding: 0; 
+		left: 0;
+		transition: left 0.5s;
+
+		&.s1{
+			left: 0;
+		}
+
+		&.s2{
+			left: -100%;
+		}
+
+		&.s3{
+			left: -200%;
+		}
+	}
+
+	li{
+		width: 33.3333332%;
+		background-position: center center;
+		background-size: cover;
+		float: left;
+		position: relative;
+
+		div{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			color: white;
+			text-align: center;
+			z-index: 10;
+			width: 100%;
+		    margin: 16% auto;
+		    text-shadow: 1px 2px rgba(0, 0, 0, 0.5);
+		    h1{
+		    	margin: 0px;
+		    	font-size: 2em;
+		    }
+
+		}
+
+		img{
+			display: block;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+		}
+	}
+
+	.s1{
+	}
+
+	.s2{
+	}
+
+	.s3{
+	}
+
+	.cd-slider-nav{
+		height: 50px;
+		background-color: #252525;
+		li{
+			width: 5%;
+			height: 29px;
+			background-color: white;
+			img{
+				width: 100%;
+			}
+		}
+		nav{
+			ul{
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+/** Mobile Fathers & Families **/
+.mainpicfamilies{
+	background: url(../img/families.jpg);
+}
+
+.difference{
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.parentingtag{
+	margin-top: 10px;
+}
+
+.parentingparagraph{
+	margin-bottom: 20px;
+	p{
+	margin: 0px;
+	}
+}
+
+/**mobile for homepage**/
+
+.bluestatbox{
+	background: url(../img/bluebox.jpg);
+	padding: 40px 20px 95px 20px;
+	position: relative;
+	margin-top: 30px;
+	h2, h3{
+		background: none;
+		color: white;
+		margin: 0px;
+		padding: 0px;
+	}
+	a{
+		text-align: center;
+		background: #d45b18;
+	  	background-image: -webkit-linear-gradient(top, #d45b18, #be390d);
+	  	background-image: -moz-linear-gradient(top, #d45b18, #be390d);
+	  	background-image: -ms-linear-gradient(top, #d45b18, #be390d);
+	 	 background-image: -o-linear-gradient(top, #d45b18, #be390d);
+	 	 background-image: linear-gradient(to bottom, #d45b18, #be390d);
+	  	-webkit-border-radius: 4;
+	  	-moz-border-radius: 4;
+	  	border-radius: 4px;
+	  	color: #ffffff;
+	  	padding: 5px 40px 5px 40px;
+	    text-decoration: none;
+	    position: absolute;
+	    right: 75px;
+	    bottom: 45px;
+	    text-transform: uppercase;
+	    font-size: 1em;
+	}
+	h3{
+		margin-top: 10px;
+		text-transform: lowercase;
+	}
+	.number{
+		display: inline-block;
+		font-size: 1.5em;
+	}
+}
+
+.news{
+	article{
+		text-align: right;
+		margin-top: 10px;
+	}
+
+}
+
+.warren{
+	text-align: center;
+	img{
+		display: block;
+		margin: 0 auto;
+	}
+	h4{
+		margin: 0px;
+		margin-top: 10px;
+	}
+
+	.participant{
+		margin-bottom: 10px;
+		font-size: 1.10em;
+	}
+}
+.quote{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 1.10em;
+}
 
 
 /* Tablet Fatherhood */
@@ -530,6 +747,9 @@ form{
 	}
 	.header2 {
     	max-width: 25%;
+    	a{
+    		padding: 15px 40px 15px 40px;
+    	}
 	}
 
 	.mainpic{
@@ -602,7 +822,96 @@ form{
 	    margin: 0px;
 	    padding: 10px 30px 10px 10px;
 	}
+
+	.donation{
+		p{
+			display: inline-block;
+		}
+		input{
+			width: 10%;
+		}
+		select{
+			width: 43%;
+		}
+	}
+
+	.additionalinfo{
+		select{
+			width: 43%;
+		}
+	}
+
+	.emailbar{
+		width: 25%;
+	}
+
+	.payment{
+		select{
+			width: 13%;
+		}
+		input{
+			width: 35%;
+		}
+		br{
+			display: block;
+		}
+
+		.cv{
+			width: 10%;
+		}
+
+		.exp{
+			width: 41%;
+		}
+		.submit{
+			margin: 30px auto;
+			display: block;
+			width: 60%;
+		}
+	}
 }
+
+
+/* tablet homepage8*/
+.news{
+
+	img{
+		width: 100%;
+		margin-top: 0px;
+		margin-bottom: 20px;
+	}
+	.news1, .news2{
+		width: 46%;
+		vertical-align: top;
+		a, p, h3{
+		font-size: 1em;
+		}
+		h3{
+			margin-bottom: 10px;
+		}
+		
+	}
+	.news1{
+		margin-right: 40px;
+	}
+	
+	.greybox{
+		padding: 10px 20px 30px 20px;
+	}
+
+}
+
+.warren, .quote{
+	display: inline-block;
+	width: 45%;
+	vertical-align: top;
+}
+
+.warren{
+	margin-right: 40px;
+}
+
+
 
 /* desktop fatherhood */
 @media (min-width: 900px) {
@@ -709,7 +1018,100 @@ form{
 		right: 0px;
 		bottom: 25px;
 	}
+
+	.advertisement{
+		p{
+			display: inline-block;
+		}
+	}
+	input{
+		width: 34%;
+		margin: 5px 0px 10px 0px;
+	}
+
+	.addressdonate{
+		width: 37%;
+    	margin: 0px 4px 0px 0px;
+	}
+
+	.donorinfo{
+		select{
+			width: 15%;
+		}
+
+		.citydonate, .zip{
+			width: 20%;
+		}
+		.country{
+			display: block;
+		}
+	}
+
+	input[type="radio"]{
+		width: 3%;
+	}
+
+	.cvv{
+		display: inline-block;
+		width: 10%;
+		br{
+			display: none;
+		}
+		.cv{
+			width: 46%;
+		}
+	}
+
+	.payment{
+		input{
+			width: 30%;
+		}
+		.exp{
+			width: 10%;
+		}
+	}
+
+
+//* Snippet of Families**//
+	.greyboxcontent{
+		p, a{
+			font-size: 1em;
+		}
+	}
+
+
+	/** snippet of desktop hp */
+
+	.cd-hero{
+		.cd-slider-nav{
+			li{
+				width: 3%;
+			}
+		}
+	}
+	.donatehp{
+		padding: 0px;
+		width: 100%;
+		margin-top: 30px;
+		p{
+			margin-top: 10px;
+		
+		}
+		a{
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+	}
+	.bluestatbox{
+		padding: 100px;
+	}
+	.news{
+		.readmore{
+			display: block;
+			width: 100%;
+				
+			}
+	}
+		
 }
-
-
 

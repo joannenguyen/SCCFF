@@ -13,20 +13,27 @@
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
+        <!-- <link rel="stylesheet" href="css/style2.css"> -->
     </head>
     <body>
-            <div class="push"> 
+        <div class="push content">
+           <!--  <div class="push">  -->
                 <header>
                     <a href="#menu" class="menu-link">MENU</a>
                     <nav id="menu" class="panel" role="navigation">                    
                         <ul>
+                            <li><div id="tfheader">
+                            <form class="newsearch" method="get" action="http://www.google.com">
+                                    <input type="text" class="tftextinput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="tfbutton">
+                            </form>
+                            </li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Impact</a></li>
-                            <li><a href="#">Fatherhood Programs</a></li>
+                            <li><a href="fatherhood.html">Fatherhood Programs</a></li>
                             <li><a href="#">Expertise</a></li>
                             <li><a href="#">Resources</a></li>
                             <li><a href="#">News</a></li>
-                            <li><a href="#">Fathers and Families</a></li>
+                            <li><a href="families.html">Fathers and Families</a></li>
                             <li><a href="#">Practitioners</a></li>
                             <li><a href="#">Funders, Partners &amp; Policy-Makers</a></li>
                             <li><a href="#">Media</a></li>
@@ -35,44 +42,36 @@
                     <a href="#" class="prose">Pro Se Modification</a>
                     <a href="#" class="expungement">Expungement Guide</a>
                  </header>
-            </div> <!--end of.push-->
-            <div class="push clearfix">
-                <div class="header2">
+            <!-- </div>  --><!--end of.push-->
+            <div class="clearfix">
+                <div class="header2 ">
                     <img src="img/logo.png" alt="Logo">
-                    <a href="#">DONATE</a>
+                    <a href="donation.html">DONATE</a>
                 </div> <!--end of .header2-->
+            </div>
 
                 <section class="cd-hero">
-                    <ul class="cd-hero-slider autoplay">
-                        <li class="selected">
-                            <div class="cd-full-width">
+                    <ul class="cd-hero-slider clearfix">
+                        <li>
+                            <div>
                                 <h1>Make a Difference in Dad's Life</h1>
                                 <p>Donate to the Center or a Local Fatherhood Program</p>
-                                <a href="#0" class="cd-btn">Donate</a>
-                            </div> <!-- .cd-full-width -->
-                            <div class="cd-full-width cd-img-container">
-                                <img src="img/slideshow1.jpg" alt="slideshow1">
                             </div>
+                            <img src="img/slideshow1.jpg">
                         </li>
-                 
-                        <li class>
-                            <div class="cd-half-width">
+                        <li>
+                            <div>
                                 <h1>It's not too late to be the father your child needs</h1>
                                 <p>Learn all about the programs the Center has to offer and see which program fits you best</p>
-                            </div><!-- end of .cd-half-width-->
-                            <div class="cd-half-width cd-img-container">
-                                <img src="img/slideshow2.jpg" alt="slideshow2">
-                            </div> <!-- end of .cd-half-width.cd-img-container-->
+                            </div>
+                            <img src="img/slideshow2.jpg">
                         </li>
-                        <li class>
-                            <div class="cd-half-width">
+                        <li>
+                            <div>
                                 <h1>Help is just a click away</h1>
                                 <p>The Center provides free sources for fathers &amp; families to gain helpful parenting tips.</p>
-                            </div><!-- end of .cd-half-width-->
-                            <div class="cd-half-width"></div>
-                            <div class-"cd-half-width cd-img-container">
-                                <img src="img/slideshow3.jpg">
-                            </div> 
+                            </div>
+                            <img src="img/slideshow3.jpg">
                         </li>
                  
                     </ul> <!-- .cd-hero-slider -->
@@ -80,21 +79,136 @@
                     <div class="cd-slider-nav">
                         <nav>
                             <span class="cd-marker item-1"></span>
-                            
                             <ul>
-                                <li class="selected"><a href="#0">Intro</a></li>
-                                <li><a href="#0">Tech 1</a></li>
-                                <li><a href="#0">Tech 2</a></li>
+                                <li><a href="#" data-slide="s1"><img src="img/icon.jpg"></a></li>
+                                <li><a href="#" data-slide="s2"><img src="img/icon-02.jpg"></a></li>
+                                <li><a href="#" data-slide="s3"><img src="img/icon-03.jpg"></a></li>
                                 <!-- other navigation items here -->
                             </ul>
                         </nav> 
                     </div> <!-- .cd-slider-nav -->
                 </section> <!-- .cd-hero -->
+                <div class="bluestatbox">
+                    <h2>By the numbers, programs helped <div class="number">527</div> fathers get jobs.</h2>
+                    <h3>Join us in helping fathers around the world.</h3>
+                    <a href="donation.html">Donate</a>
+                </div> <!--end of .bluestatbox-->
+                <div class="texture">
+                    <h2>News &amp; Events</h2>
+                </div>
+
+                <div class="wrapper news">
+                    <div class="greybox">
+                        <div class="news1">
+                            <img src="img/newspic.jpg">
+                            <a href="#"><h3>South Carolina 
+                            Responsible Father Case Gets National 
+                            Coverage</h3></a>
+                            <p>The importance of the 
+                            Responsible Father Registry is highlighted by this ABC News story about Chris Emanuel, who managed to get his daughter back after her mother put her up for adoption.
+                            </p>
+                            <article class="readmore"><a href="#">Read More</a></article>
+                        </div> <!--end of .news1-->
+                        <div class="news2">
+                            <img src="img/newspic-02.jpg">
+                            <a href="#"><h3>The State Gives Front-Page Play to the Work of Our Fatherhood Programs</h3></a>
+                            <p>The work of the South Carolina Center for Fathers and Families was featured prominently and ably in a front-page, centerpiece story in The State on Sunday, Sept. 13</p>
+                            <article class="readmore"><a href="#">Read More</a></article>
+                        </div><!--end of .news2-->
+
+                    </div><!--end of .greybox-->
+                </div> <!--end of .news-->
+                <div class="texture">
+                    <h2>About the Center</h2>
+                </div>
+                <div class="wrapper">
+                    <p>The South Carolina Center for Fathers and Familiesmis one of the Southeast's most experienced and effective organizations creating stronger, stable and successful families by supporting engaged and responsible fathers.</p>
+                </div>
+                <div class="texture">
+                    <h2>Why Get Involved?</h2>
+                </div>
+                <div class="warren">
+                    <img src="img/warren.png">
+                    <h4>Warren</h4>
+                    <p class="participant">a participant of
+                    A Father’s Place</p>
+                    <div class="wrapper">
+                        <p>“Before the fatherhood program, I was arguing with the mother of my child consistently and was unable to see my son due to it. I learned to be more patient and take a different approach with the mother of my son. I am now seeing my son 2 to 3 times a week and the mother and I are able to work together for our child's sake.”</p>
+                    </div>
+                </div> <!--end of .warren-->
+                <div class="quote">
+                    <p>“The program was a savior. We had meetings every Tuesday and every week. I got to get everything off my chest and then I got to hear other men who are going through the same thing so I know I’m not here by myself.”</p>
+                    <p>-Keito Jordan, Father</p>       
+                </div>   
 
 
-
-            </div> <!--end of .push clearfix-->
-            <footer>Copyright &copy; 2013 My Site. All Rights Reserved.</footer>
+                 <div class="donate2 donatehp">
+                            <p>Help fathers make a long lasting, positive impact in the lives of their children.</p>
+                            <a href="donation.html">Donate</a>
+                        </div> <!-- end of .donate2-->
+                <footer>
+                    <div class="findprogram">
+                        <h4>Find a Program</h4>
+                        <nav class="program-nav">
+                            <select>
+                                <option value="fathersplace"><a href="#">A Father's Place</a></option>
+                                <option value="fathertofather"><a href="#">Father to Father Project</a></option>
+                                <option value="lancaster"><a href="#">Lancaster Fatherhood Project</a></option>
+                                <option value="midlands"><a href="#">Midlands Fatherhood Coalition</a></option>
+                                <option value="upstate"><a href="#">Upstate Fatherhood Coalition</a></option>
+                            </select>
+                        </nav> <!-- end of .program-nav-->
+                    </div><!-- end of .findprogram-->
+                    <!-- <div class="wrapper2"> -->
+                        <div class="about">
+                            <p><strong>The South Carolina Center for Fathers &amp; Families</strong></p>
+                            <p><i>A Ministry of the Sisters of Charity of St. Augustine</i></p>
+                        </div> <!-- end of .about-->
+                        <div class="donate">
+                            <p>Help fathers make a long lasting, positive impact in the lives of their children.</p>
+                            <a href="#">Donate</a>
+                        </div> <!-- end of .donate-->
+                        <div class="about2">
+                            <p><strong>The South Carolina Center for Fathers &amp; Families</strong></p>
+                            <p><i>A Ministry of the Sisters of Charity of St. Augustine</i></p>
+                        </div> <!-- end of .about-->
+                        <div class="email">
+                            <a href="#" class="emailbutton">Sign up for our email newsletter</a>
+                            <a href="#" class="fb"><img src="img/facebook.png"></a>
+                            <a href="#" class="twitter"><img src="img/twitter.png"></a>
+                        </div> <!-- end of .email-->
+                        <section class="contact">
+                            <div class="address">
+                                <ul>
+                                    <li>2711 Middleburg Drive, Suite 11</li>
+                                    <li>Columbia, SC 29204</li>
+                                    <li>Phone: 803.227.8800</li>
+                                    <li>Fax: 803.227.8806</li>
+                                </ul>
+                            </div> <!-- end of .address-->
+                            <nav class="footer-nav">
+                                <ul>
+                                    <li><a href="#"><strong>FAQ</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Site Map</a></li>
+                                    <li><a href="#">Private Policy</strong></a></li>
+                                </ul>
+                            </nav><!-- end of .footer-nav-->
+                        </section><!-- end of .contact-->
+                        <div class="email2">
+                            <a href="#" class="emailbutton">Sign up for our email newsletter</a>
+                            <a href="#" class="fb"><img src="img/facebook.png"></a>
+                            <a href="#" class="twitter"><img src="img/twitter.png"></a>
+                        </div> <!-- end of .email-->
+                        <section class="legal">
+                            <p>The information on this website is for educational purposes only. It is not legal advice, nor does it create an attorney/client relationship.</p>
+                            <p>© Copyright 2014 The South Carolina Center for Fathers and Families</p>
+                        </section><!-- end of .legal-->
+                    <!-- </div>  end of .wrapper2 -->
+                </footer>
+          
+            
+        </div> <!--end of .content-->
 
          <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="js/bigslide.js"></script>
