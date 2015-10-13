@@ -182,7 +182,7 @@ h2 {
   margin-left: 10px;
 }
 /* line 179, ../scss/style.scss */
-.header2 a {
+.header2 .donatebutton {
   text-align: center;
   background: #d45b18;
   background-image: -webkit-linear-gradient(top, #d45b18, #be390d);
@@ -556,18 +556,27 @@ form .exp {
   transition: left 0.5s;
 }
 /* line 545, ../scss/style.scss */
+.cd-hero .cd-hero-slider a {
+  text-decoration: none;
+  color: white;
+}
+/* line 548, ../scss/style.scss */
+.cd-hero .cd-hero-slider a:hover {
+  color: #7d3927;
+}
+/* line 553, ../scss/style.scss */
 .cd-hero .cd-hero-slider.s1 {
   left: 0;
 }
-/* line 549, ../scss/style.scss */
+/* line 557, ../scss/style.scss */
 .cd-hero .cd-hero-slider.s2 {
   left: -100%;
 }
-/* line 553, ../scss/style.scss */
+/* line 561, ../scss/style.scss */
 .cd-hero .cd-hero-slider.s3 {
   left: -200%;
 }
-/* line 558, ../scss/style.scss */
+/* line 566, ../scss/style.scss */
 .cd-hero li {
   width: 33.3333332%;
   background-position: center center;
@@ -575,7 +584,7 @@ form .exp {
   float: left;
   position: relative;
 }
-/* line 565, ../scss/style.scss */
+/* line 573, ../scss/style.scss */
 .cd-hero li div {
   position: absolute;
   bottom: 0;
@@ -588,80 +597,81 @@ form .exp {
   margin: 16% auto;
   text-shadow: 1px 2px rgba(0, 0, 0, 0.5);
 }
-/* line 576, ../scss/style.scss */
+/* line 584, ../scss/style.scss */
 .cd-hero li div h1 {
   margin: 0px;
   font-size: 2em;
 }
-/* line 583, ../scss/style.scss */
+/* line 591, ../scss/style.scss */
 .cd-hero li img {
   display: block;
   margin: 0;
   padding: 0;
   width: 100%;
 }
-/* line 600, ../scss/style.scss */
+/* line 608, ../scss/style.scss */
 .cd-hero .cd-slider-nav {
   height: 50px;
   background-color: #252525;
 }
-/* line 603, ../scss/style.scss */
+/* line 611, ../scss/style.scss */
 .cd-hero .cd-slider-nav li {
-  width: 5%;
+  width: 15%;
   height: 29px;
   background-color: white;
 }
-/* line 607, ../scss/style.scss */
+/* line 615, ../scss/style.scss */
 .cd-hero .cd-slider-nav li img {
   width: 100%;
 }
-/* line 612, ../scss/style.scss */
+/* line 620, ../scss/style.scss */
 .cd-hero .cd-slider-nav nav ul {
   margin: 0 auto;
+  width: 30%;
 }
 
 /** Mobile Fathers & Families **/
-/* line 620, ../scss/style.scss */
+/* line 629, ../scss/style.scss */
 .mainpicfamilies {
   background: url(../img/families.jpg);
 }
 
-/* line 624, ../scss/style.scss */
+/* line 633, ../scss/style.scss */
 .difference {
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-/* line 628, ../scss/style.scss */
+/* line 637, ../scss/style.scss */
 .parentingtag {
   margin-top: 10px;
 }
 
-/* line 632, ../scss/style.scss */
+/* line 641, ../scss/style.scss */
 .parentingparagraph {
   margin-bottom: 20px;
 }
-/* line 634, ../scss/style.scss */
+/* line 643, ../scss/style.scss */
 .parentingparagraph p {
   margin: 0px;
 }
 
 /**mobile for homepage**/
-/* line 641, ../scss/style.scss */
+/* line 650, ../scss/style.scss */
 .bluestatbox {
   background: url(../img/bluebox.jpg);
   padding: 40px 20px 95px 20px;
   position: relative;
   margin-top: 30px;
 }
-/* line 646, ../scss/style.scss */
+/* line 655, ../scss/style.scss */
 .bluestatbox h2, .bluestatbox h3 {
   background: none;
   color: white;
   margin: 0px;
   padding: 0px;
 }
-/* line 652, ../scss/style.scss */
+/* line 661, ../scss/style.scss */
 .bluestatbox a {
   text-align: center;
   background: #d45b18;
@@ -682,44 +692,44 @@ form .exp {
   text-transform: uppercase;
   font-size: 1em;
 }
-/* line 672, ../scss/style.scss */
+/* line 681, ../scss/style.scss */
 .bluestatbox h3 {
   margin-top: 10px;
   text-transform: lowercase;
 }
-/* line 676, ../scss/style.scss */
+/* line 685, ../scss/style.scss */
 .bluestatbox .number {
   display: inline-block;
   font-size: 1.5em;
 }
 
-/* line 683, ../scss/style.scss */
+/* line 692, ../scss/style.scss */
 .news article {
   text-align: right;
   margin-top: 10px;
 }
 
-/* line 690, ../scss/style.scss */
+/* line 699, ../scss/style.scss */
 .warren {
   text-align: center;
 }
-/* line 692, ../scss/style.scss */
+/* line 701, ../scss/style.scss */
 .warren img {
   display: block;
   margin: 0 auto;
 }
-/* line 696, ../scss/style.scss */
+/* line 705, ../scss/style.scss */
 .warren h4 {
   margin: 0px;
   margin-top: 10px;
 }
-/* line 701, ../scss/style.scss */
+/* line 710, ../scss/style.scss */
 .warren .participant {
   margin-bottom: 10px;
   font-size: 1.10em;
 }
 
-/* line 706, ../scss/style.scss */
+/* line 715, ../scss/style.scss */
 .quote {
   text-align: center;
   margin-top: 10px;
@@ -728,57 +738,57 @@ form .exp {
 
 /* Tablet Fatherhood */
 @media (min-width: 600px) {
-  /* line 716, ../scss/style.scss */
+  /* line 725, ../scss/style.scss */
   h2 {
     padding: 10px 0px 10px 45px;
   }
 
-  /* line 720, ../scss/style.scss */
+  /* line 729, ../scss/style.scss */
   .greybox img {
     display: inline-block;
     vertical-align: top;
     margin-top: 25px;
     margin-right: 10px;
   }
-  /* line 727, ../scss/style.scss */
+  /* line 736, ../scss/style.scss */
   .greybox .mobileonly {
     display: none;
   }
-  /* line 731, ../scss/style.scss */
+  /* line 740, ../scss/style.scss */
   .greybox .tablet {
     display: block;
   }
-  /* line 734, ../scss/style.scss */
+  /* line 743, ../scss/style.scss */
   .greybox div {
     display: inline-block;
     width: 63%;
     margin-top: 25px;
   }
-  /* line 740, ../scss/style.scss */
+  /* line 749, ../scss/style.scss */
   .greybox h3 {
     margin: 0px;
   }
 
-  /* line 745, ../scss/style.scss */
+  /* line 754, ../scss/style.scss */
   header .prose, header .expungement {
     width: 10%;
   }
 
-  /* line 749, ../scss/style.scss */
+  /* line 758, ../scss/style.scss */
   .header2 {
     max-width: 25%;
   }
-  /* line 751, ../scss/style.scss */
-  .header2 a {
+  /* line 760, ../scss/style.scss */
+  .header2 .donatebutton {
     padding: 15px 40px 15px 40px;
   }
 
-  /* line 757, ../scss/style.scss */
+  /* line 766, ../scss/style.scss */
   .mainpic p {
     margin: 0px 20px;
   }
 
-  /* line 762, ../scss/style.scss */
+  /* line 771, ../scss/style.scss */
   .findprogram {
     display: inline-block;
     width: 45%;
@@ -787,7 +797,7 @@ form .exp {
     padding: 45px 20px;
   }
 
-  /* line 769, ../scss/style.scss */
+  /* line 778, ../scss/style.scss */
   .donate {
     width: 45%;
     display: inline-block;
@@ -797,18 +807,18 @@ form .exp {
     border-right: none;
     padding: 28px 12px 25px 12.2px;
   }
-  /* line 777, ../scss/style.scss */
+  /* line 786, ../scss/style.scss */
   .donate p {
     display: block;
     margin-bottom: 10px;
   }
 
-  /* line 783, ../scss/style.scss */
+  /* line 792, ../scss/style.scss */
   .about, .email {
     display: none;
   }
 
-  /* line 787, ../scss/style.scss */
+  /* line 796, ../scss/style.scss */
   .about2 {
     display: inline-block;
     border-right: 2px solid #d9d9da;
@@ -818,7 +828,7 @@ form .exp {
     padding-top: 41px;
   }
 
-  /* line 796, ../scss/style.scss */
+  /* line 805, ../scss/style.scss */
   .email2 {
     display: block;
     width: 45%;
@@ -826,26 +836,26 @@ form .exp {
     margin: 0px;
     margin-right: 20px;
   }
-  /* line 803, ../scss/style.scss */
+  /* line 812, ../scss/style.scss */
   .email2 .fb, .email2 .twitter {
     width: 30px;
   }
-  /* line 806, ../scss/style.scss */
+  /* line 815, ../scss/style.scss */
   .email2 .emailbutton {
     padding: 7px 25px 7px 25px;
   }
 
-  /* line 811, ../scss/style.scss */
+  /* line 820, ../scss/style.scss */
   .contact {
     display: inline-block;
     font-size: 0.8em;
   }
-  /* line 814, ../scss/style.scss */
+  /* line 823, ../scss/style.scss */
   .contact .address {
     margin: 0px 20px;
   }
 
-  /* line 819, ../scss/style.scss */
+  /* line 828, ../scss/style.scss */
   .legal {
     border-right: 2px solid #d9d9da;
     display: inline-block;
@@ -854,50 +864,50 @@ form .exp {
     padding: 10px 30px 10px 10px;
   }
 
-  /* line 828, ../scss/style.scss */
+  /* line 837, ../scss/style.scss */
   .donation p {
     display: inline-block;
   }
-  /* line 831, ../scss/style.scss */
+  /* line 840, ../scss/style.scss */
   .donation input {
     width: 10%;
   }
-  /* line 834, ../scss/style.scss */
+  /* line 843, ../scss/style.scss */
   .donation select {
     width: 43%;
   }
 
-  /* line 840, ../scss/style.scss */
+  /* line 849, ../scss/style.scss */
   .additionalinfo select {
     width: 43%;
   }
 
-  /* line 845, ../scss/style.scss */
+  /* line 854, ../scss/style.scss */
   .emailbar {
     width: 25%;
   }
 
-  /* line 850, ../scss/style.scss */
+  /* line 859, ../scss/style.scss */
   .payment select {
     width: 13%;
   }
-  /* line 853, ../scss/style.scss */
+  /* line 862, ../scss/style.scss */
   .payment input {
     width: 35%;
   }
-  /* line 856, ../scss/style.scss */
+  /* line 865, ../scss/style.scss */
   .payment br {
     display: block;
   }
-  /* line 860, ../scss/style.scss */
+  /* line 869, ../scss/style.scss */
   .payment .cv {
     width: 10%;
   }
-  /* line 864, ../scss/style.scss */
+  /* line 873, ../scss/style.scss */
   .payment .exp {
     width: 41%;
   }
-  /* line 867, ../scss/style.scss */
+  /* line 876, ../scss/style.scss */
   .payment .submit {
     margin: 30px auto;
     display: block;
@@ -905,82 +915,82 @@ form .exp {
   }
 }
 /* tablet homepage8*/
-/* line 879, ../scss/style.scss */
+/* line 890, ../scss/style.scss */
 .news img {
   width: 100%;
   margin-top: 0px;
   margin-bottom: 20px;
 }
-/* line 884, ../scss/style.scss */
+/* line 895, ../scss/style.scss */
 .news .news1, .news .news2 {
   width: 46%;
   vertical-align: top;
 }
-/* line 887, ../scss/style.scss */
+/* line 898, ../scss/style.scss */
 .news .news1 a, .news .news1 p, .news .news1 h3, .news .news2 a, .news .news2 p, .news .news2 h3 {
   font-size: 1em;
 }
-/* line 890, ../scss/style.scss */
+/* line 901, ../scss/style.scss */
 .news .news1 h3, .news .news2 h3 {
   margin-bottom: 10px;
 }
-/* line 895, ../scss/style.scss */
+/* line 906, ../scss/style.scss */
 .news .news1 {
   margin-right: 40px;
 }
-/* line 899, ../scss/style.scss */
+/* line 910, ../scss/style.scss */
 .news .greybox {
   padding: 10px 20px 30px 20px;
 }
 
-/* line 905, ../scss/style.scss */
+/* line 916, ../scss/style.scss */
 .warren, .quote {
   display: inline-block;
   width: 45%;
   vertical-align: top;
 }
 
-/* line 911, ../scss/style.scss */
+/* line 922, ../scss/style.scss */
 .warren {
   margin-right: 40px;
 }
 
 /* desktop fatherhood */
 @media (min-width: 900px) {
-  /* line 919, ../scss/style.scss */
+  /* line 930, ../scss/style.scss */
   .content {
     max-width: 900px;
     background-color: white;
     margin: 0 auto;
   }
 
-  /* line 924, ../scss/style.scss */
+  /* line 935, ../scss/style.scss */
   body {
     background-image: url("../img/background.jpg");
     background-repeat: repeat;
   }
 
-  /* line 929, ../scss/style.scss */
+  /* line 940, ../scss/style.scss */
   .greybox {
     margin-bottom: 30px;
   }
-  /* line 931, ../scss/style.scss */
+  /* line 942, ../scss/style.scss */
   .greybox article {
     display: inline-block;
     width: 32.9%;
     vertical-align: top;
   }
-  /* line 938, ../scss/style.scss */
+  /* line 949, ../scss/style.scss */
   .greybox p, .greybox a, .greybox li {
     font-size: .8em;
   }
 
-  /* line 943, ../scss/style.scss */
+  /* line 954, ../scss/style.scss */
   .donate {
     display: none;
   }
 
-  /* line 947, ../scss/style.scss */
+  /* line 958, ../scss/style.scss */
   .donate2 {
     display: inline-block;
     width: 40%;
@@ -992,47 +1002,47 @@ form .exp {
     border-bottom: none;
     border-right: none;
   }
-  /* line 957, ../scss/style.scss */
+  /* line 968, ../scss/style.scss */
   .donate2 p {
     display: inline-block;
     font-size: 1.5em;
   }
-  /* line 961, ../scss/style.scss */
+  /* line 972, ../scss/style.scss */
   .donate2 a {
     margin-top: 30px;
     width: 36%;
     display: inline-block;
   }
 
-  /* line 968, ../scss/style.scss */
+  /* line 979, ../scss/style.scss */
   .findprogram {
     margin-top: 0px;
     border-top: none;
     border-bottom: none;
   }
 
-  /* line 973, ../scss/style.scss */
+  /* line 984, ../scss/style.scss */
   footer {
     position: relative;
     border-top: 2px solid #d9d9da;
   }
 
-  /* line 978, ../scss/style.scss */
+  /* line 989, ../scss/style.scss */
   .resourcesfooter {
     width: 49%;
     display: inline-block;
   }
-  /* line 981, ../scss/style.scss */
+  /* line 992, ../scss/style.scss */
   .resourcesfooter .texture {
     width: 101%;
     border-top: 2px solid #d9d9da;
   }
-  /* line 985, ../scss/style.scss */
+  /* line 996, ../scss/style.scss */
   .resourcesfooter h2 {
     margin-top: 0px;
   }
 
-  /* line 989, ../scss/style.scss */
+  /* line 1000, ../scss/style.scss */
   .email2 {
     float: none;
     margin-right: -15px;
@@ -1042,7 +1052,7 @@ form .exp {
     top: 109px;
   }
 
-  /* line 998, ../scss/style.scss */
+  /* line 1009, ../scss/style.scss */
   .contact {
     float: none;
     position: absolute;
@@ -1051,7 +1061,7 @@ form .exp {
     margin: 0px;
   }
 
-  /* line 1007, ../scss/style.scss */
+  /* line 1018, ../scss/style.scss */
   .about2 {
     display: block;
     border-right: none;
@@ -1060,7 +1070,7 @@ form .exp {
     padding-bottom: 50px;
   }
 
-  /* line 1015, ../scss/style.scss */
+  /* line 1026, ../scss/style.scss */
   .legal {
     border-right: none;
     float: none;
@@ -1069,97 +1079,96 @@ form .exp {
     bottom: 25px;
   }
 
-  /* line 1024, ../scss/style.scss */
+  /* line 1035, ../scss/style.scss */
   .advertisement p {
     display: inline-block;
   }
 
-  /* line 1028, ../scss/style.scss */
+  /* line 1039, ../scss/style.scss */
   input {
     width: 34%;
     margin: 5px 0px 10px 0px;
   }
 
-  /* line 1033, ../scss/style.scss */
+  /* line 1044, ../scss/style.scss */
   .addressdonate {
     width: 37%;
     margin: 0px 4px 0px 0px;
   }
 
-  /* line 1039, ../scss/style.scss */
+  /* line 1050, ../scss/style.scss */
   .donorinfo select {
     width: 15%;
   }
-  /* line 1043, ../scss/style.scss */
+  /* line 1054, ../scss/style.scss */
   .donorinfo .citydonate, .donorinfo .zip {
     width: 20%;
   }
-  /* line 1046, ../scss/style.scss */
+  /* line 1057, ../scss/style.scss */
   .donorinfo .country {
     display: block;
   }
 
-  /* line 1051, ../scss/style.scss */
+  /* line 1062, ../scss/style.scss */
   input[type="radio"] {
     width: 3%;
   }
 
-  /* line 1055, ../scss/style.scss */
+  /* line 1066, ../scss/style.scss */
   .cvv {
     display: inline-block;
     width: 10%;
   }
-  /* line 1058, ../scss/style.scss */
+  /* line 1069, ../scss/style.scss */
   .cvv br {
     display: none;
   }
-  /* line 1061, ../scss/style.scss */
+  /* line 1072, ../scss/style.scss */
   .cvv .cv {
     width: 46%;
   }
 
-  /* line 1067, ../scss/style.scss */
+  /* line 1078, ../scss/style.scss */
   .payment input {
     width: 30%;
   }
-  /* line 1070, ../scss/style.scss */
+  /* line 1081, ../scss/style.scss */
   .payment .exp {
     width: 10%;
   }
 
-  /* line 1078, ../scss/style.scss */
+  /* line 1089, ../scss/style.scss */
   .greyboxcontent p, .greyboxcontent a {
     font-size: 1em;
   }
 
   /** snippet of desktop hp */
-  /* line 1088, ../scss/style.scss */
-  .cd-hero .cd-slider-nav li {
-    width: 3%;
-  }
-
-  /* line 1093, ../scss/style.scss */
+  /* line 1104, ../scss/style.scss */
   .donatehp {
     padding: 0px;
     width: 100%;
     margin-top: 30px;
   }
-  /* line 1097, ../scss/style.scss */
+  /* line 1108, ../scss/style.scss */
   .donatehp p {
     margin-top: 10px;
   }
-  /* line 1101, ../scss/style.scss */
+  /* line 1112, ../scss/style.scss */
   .donatehp a {
     margin-top: 15px;
     margin-bottom: 15px;
   }
 
-  /* line 1106, ../scss/style.scss */
+  /* line 1117, ../scss/style.scss */
   .bluestatbox {
     padding: 100px;
   }
+  /* line 1119, ../scss/style.scss */
+  .bluestatbox a {
+    padding: 15px 45px;
+  }
 
-  /* line 1110, ../scss/style.scss */
+  /* line 1124, ../scss/style.scss */
   .news .readmore {
     display: block;
     width: 100%;

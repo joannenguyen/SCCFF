@@ -176,7 +176,7 @@ h2{
 		width: 100%;
 		margin-left: 10px;
 	}
-	a{
+	.donatebutton{
 		text-align: center;
 		background: #d45b18;
 	  	background-image: -webkit-linear-gradient(top, #d45b18, #be390d);
@@ -542,6 +542,14 @@ form{
 		left: 0;
 		transition: left 0.5s;
 
+		a{
+			text-decoration: none;
+			color: white;
+			&:hover{
+				color: $red;
+			}
+		}
+
 		&.s1{
 			left: 0;
 		}
@@ -601,7 +609,7 @@ form{
 		height: 50px;
 		background-color: #252525;
 		li{
-			width: 5%;
+			width: 15%;
 			height: 29px;
 			background-color: white;
 			img{
@@ -611,6 +619,7 @@ form{
 		nav{
 			ul{
 				margin: 0 auto;
+				width: 30%;
 			}
 		}
 	}
@@ -748,7 +757,7 @@ form{
 	}
 	.header2 {
     	max-width: 25%;
-    	a{
+    	.donatebutton{
     		padding: 15px 40px 15px 40px;
     	}
 	}
@@ -874,6 +883,8 @@ form{
 
 
 /* tablet homepage8*/
+
+
 .news{
 
 	img{
@@ -1083,13 +1094,13 @@ form{
 
 	/** snippet of desktop hp */
 
-	.cd-hero{
-		.cd-slider-nav{
-			li{
-				width: 3%;
-			}
-		}
-	}
+	// .cd-hero{
+	// 	.cd-slider-nav{
+	// 		li{
+	// 			width: 10%;
+	// 		}
+	// 	}
+	// }
 	.donatehp{
 		padding: 0px;
 		width: 100%;
@@ -1105,6 +1116,9 @@ form{
 	}
 	.bluestatbox{
 		padding: 100px;
+		a{
+			padding: 15px 45px;
+		}
 	}
 	.news{
 		.readmore{
