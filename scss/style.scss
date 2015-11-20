@@ -1,11 +1,33 @@
 /***** CLEARFIX is applied to the parent of floated elements *************/
 /*************************************************************************/
+@import "compass";
+
+
+@mixin button{
+	text-align: center;
+	background: #d45b18;
+  	background-image: -webkit-linear-gradient(top, #d45b18, #be390d);
+  	background-image: -moz-linear-gradient(top, #d45b18, #be390d);
+  	background-image: -ms-linear-gradient(top, #d45b18, #be390d);
+ 	 background-image: -o-linear-gradient(top, #d45b18, #be390d);
+ 	 background-image: linear-gradient(to bottom, #d45b18, #be390d);
+  	-webkit-border-radius: 4;
+  	-moz-border-radius: 4;
+  	border-radius: 4px;
+  	color: #ffffff;
+  	text-decoration: none;
+    &:hover{
+    	opacity: 0.7;
+    }
+}
+
 $red: #7d3927;
 $fontcolor: #49474d;
 $grey: #d9d9da;
 $orange: #e98300;
 $menu: #1e1d1d;
 $headerfont: "Charter Bold", Arial, sans-serif;
+$blue: #4061a6;
 
 
 .clearfix {
@@ -25,6 +47,7 @@ $headerfont: "Charter Bold", Arial, sans-serif;
 
 
 body{
+	min-width: 360px;
 	color: $fontcolor;
 	font-family: "Open Sans", Helvetica, serif;
 	p{
@@ -52,6 +75,9 @@ h2{
 
 .push {
     position: relative;
+}
+.content{
+	box-shadow: 0 0 10px rgba( 0,0,0, 0.3);
 }
 
 .wrapper{
@@ -97,13 +123,14 @@ header, .headertexture{
 	height: 70px;
 	position: relative;
 	margin-bottom: 5px;
+	// position: fixed;
 
 	a{
 		text-decoration: none;
-	}
-
-	a:hover{
-		color: $red;
+		&:hover{
+			color: $blue;
+			text-decoration: underline;
+		}
 	}
 
 	.menu-link{
@@ -156,11 +183,12 @@ nav {
 		border-bottom: 1px solid #fff;
 	}
 
-	li:hover{
-		background-color: $red;
-	}
+	// li:hover{
+	// 	background-color: $red;
+	// }
 	a:hover{
-		color: white;
+		color: $blue;
+		text-decoration: underline;
 	}
 }
 
@@ -175,32 +203,27 @@ h2{
 	img{
 		width: 100%;
 		margin-left: 10px;
+		padding: 5px 0px;
+		&:hover{
+			opacity: 0.5;
+		}
 	}
 	.donatebutton{
-		text-align: center;
-		background: #d45b18;
-	  	background-image: -webkit-linear-gradient(top, #d45b18, #be390d);
-	  	background-image: -moz-linear-gradient(top, #d45b18, #be390d);
-	  	background-image: -ms-linear-gradient(top, #d45b18, #be390d);
-	 	 background-image: -o-linear-gradient(top, #d45b18, #be390d);
-	 	 background-image: linear-gradient(to bottom, #d45b18, #be390d);
-	  	-webkit-border-radius: 4;
-	  	-moz-border-radius: 4;
-	  	border-radius: 4px;
-	  	color: #ffffff;
+		@include button;
 	  	font-size: 20px;
 	  	padding: 10px 40px 10px 40px;
-	  	text-decoration: none;
 	  	position: absolute;
 	    bottom: 4px;
-	    right: 10px;;
+	    right: 10px;
+	    margin-bottom: 5px;
+	   
 	}
 
 }
 /* Mobile Fatherhood*/
 
 .mainpic, .mainpicfamilies, .mainpicdonation{
-	background: url( ../img/fatherhood.jpg );
+	background: url( ../img/newpic.jpg );
 	background-size: cover;
 	background-position: center center;
 	width: 100%;
@@ -229,6 +252,7 @@ h2{
 		margin-right: 10px;
 		margin-left: 10px;
 		text-shadow: 1px 2px rgba(0,0,0,0.5);
+		padding: 0 15px;
 	}
 }
 
@@ -242,7 +266,14 @@ h2{
 	background-color: $grey;
 	padding: 10px 20px 20px 20px;
 	img{
-		display: none;
+		// display: none;
+		width: 100%;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	}
+	article{
+		img{
+			margin-top: 15px;
+		}
 	}
 
 	.tablet{
@@ -259,6 +290,10 @@ h2{
 	a{
 		text-decoration: none;
 		color: $red;
+		&:hover{
+			color: $blue;
+			text-decoration: underline;
+		}
 	}
 
 	h3{
@@ -271,6 +306,7 @@ h2{
 }
 
 .resources{
+	margin-bottom: 30px;
 	p{
 		margin: 0px 0px 15px 0px;
 	}
@@ -325,40 +361,55 @@ h2{
 
 .about{
 	text-align: center;
-	margin-top: 15px;
+	margin-top: 30px;
 }
 
-.about2, .email2, .donate2{
+.about2, .email2, .donate{
 	display: none;
 }
 
-.donate, .donate2 {
-	padding-top: 30px;
-	padding-bottom: 25px;
-	margin: 0px 25px;
-	p{
-		display: none;
-	}
-	a{
+
+
+	.donate2{
+		margin: 0px;
+		vertical-align: bottom;
 		text-align: center;
-		background: #d45b18;
-	  	background-image: -webkit-linear-gradient(top, #d45b18, #be390d);
-	  	background-image: -moz-linear-gradient(top, #d45b18, #be390d);
-	  	background-image: -ms-linear-gradient(top, #d45b18, #be390d);
-	 	background-image: -o-linear-gradient(top, #d45b18, #be390d);
-	 	background-image: linear-gradient(to bottom, #d45b18, #be390d);
-	  	-webkit-border-radius: 4;
-	  	-moz-border-radius: 4;
-	  	border-radius: 4px;
-	  	color: #ffffff;
-	  	padding: 15px 40px 15px 40px;
-	  	text-decoration: none;
-	  	display: block;
+		padding: 30px;
+		padding-top: 50px;
+		border-top: 2px solid $grey;
+		p{
+			display: inline-block;
+			font-size: 1.5em;
+		}
+		a{
+			@include button;
+		  	padding: 15px 40px 15px 40px;
+			margin-top: 30px;
+			width: 36%;
+			display: inline-block;
+			&:hover{
+		  		opacity: 0.7;
+	  		}
+		}
 	}
-}
+
+	.donatehp{
+		padding: 0px;
+		width: 100%;
+		margin-top: 30px;
+		p{
+			margin-top: 30px;
+		
+		}
+		a{
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+	}
 
 .email, .email2{
 	margin: 0px 25px;
+
 
 	.emailbutton{
 		 background: #f3a139;
@@ -377,6 +428,9 @@ h2{
 		  display: inline-block;
 		  width: 200px;
 		  margin-right: 20px;
+		  &:hover{
+		  	opacity: 0.7;
+		  }
 	}
 	.fb, .twitter{
 		display: inline-block;
@@ -432,9 +486,10 @@ h2{
 	margin-bottom: 0px;
 }
 .mainpicdonation{
-	background: url("../img/donate.jpg");
+	background: url("../img/newpic3.jpg");
 	margin-top: 0px;
 	background-size: cover;
+	background-position: center center;
 	p{
 		font-size: 1.5em;
 	}
@@ -496,6 +551,20 @@ form{
 	}
 }
 
+.emailnewsletter{
+	width: 5%;
+}
+
+input[type=checkbox] + label {
+  color: #ccc;
+  font-style: italic;
+  vertical-align: top;
+} 
+input[type=checkbox]:checked + label {
+  color: #f00;
+  font-style: normal;
+} 
+
 .ty{
 	a{
 		color: $red;
@@ -508,20 +577,24 @@ form{
 }
 
 .submit{
+	cursor: pointer;
 	background: #d45b18;
-	  	background-image: -webkit-linear-gradient(top, #d45b18, #be390d);
-	  	background-image: -moz-linear-gradient(top, #d45b18, #be390d);
-	  	background-image: -ms-linear-gradient(top, #d45b18, #be390d);
-	 	 background-image: -o-linear-gradient(top, #d45b18, #be390d);
-	 	 background-image: linear-gradient(to bottom, #d45b18, #be390d);
-	  	-webkit-border-radius: 4;
-	  	-moz-border-radius: 4;
-	  	border-radius: 4px;
-	  	color: #ffffff;
-	  	font-size: 20px;
-	  	padding: 15px 40px 40px 40px;
-	  	border: none;
-	  	margin-top: 30px;
+  	background-image: -webkit-linear-gradient(top, #d45b18, #be390d);
+  	background-image: -moz-linear-gradient(top, #d45b18, #be390d);
+  	background-image: -ms-linear-gradient(top, #d45b18, #be390d);
+ 	 background-image: -o-linear-gradient(top, #d45b18, #be390d);
+ 	 background-image: linear-gradient(to bottom, #d45b18, #be390d);
+  	-webkit-border-radius: 4;
+  	-moz-border-radius: 4;
+  	border-radius: 4px;
+  	color: #ffffff;
+  	font-size: 20px;
+  	padding: 15px 40px 40px 40px;
+  	border: none;
+  	margin-top: 30px;
+  	 &:hover {
+      opacity: 0.7;
+   }
 }
 
 .payment{
@@ -543,11 +616,10 @@ form{
 		transition: left 0.5s;
 
 		a{
-			text-decoration: none;
-			color: white;
-			&:hover{
-				color: $red;
-			}
+			@include button;
+			padding: 10px 15px;
+			text-transform: uppercase;
+			text-shadow: none;
 		}
 
 		&.s1{
@@ -579,11 +651,11 @@ form{
 			text-align: center;
 			z-index: 10;
 			width: 100%;
-		    margin: 16% auto;
+		    margin: 10% auto;
 		    text-shadow: 1px 2px rgba(0, 0, 0, 0.5);
 		    h1{
 		    	margin: 0px;
-		    	font-size: 2em;
+		    	font-size: 1.5em;
 		    }
 
 		}
@@ -609,9 +681,13 @@ form{
 		height: 50px;
 		background-color: #252525;
 		li{
-			width: 15%;
-			height: 29px;
-			background-color: white;
+			width: 13%;
+			height: 30px;
+			// background-color: white;
+			margin-right: 28px;
+			&:last-child{
+				margin-right: 0px;
+			}
 			img{
 				width: 100%;
 			}
@@ -619,15 +695,30 @@ form{
 		nav{
 			ul{
 				margin: 0 auto;
-				width: 30%;
+				width: 50%;
+			}
+			a{
+				&:hover{
+					opacity: 0.3;
+
+				}
 			}
 		}
 	}
 }
-
+.aboutpicture{
+	img{
+		width: 100%;
+	}
+}
+.warrenpicture{
+	max-width: 100%;
+	
+}
 /** Mobile Fathers & Families **/
 .mainpicfamilies{
-	background: url(../img/families.jpg);
+	background: url(../img/newpic7.jpg);
+
 }
 
 .difference{
@@ -645,6 +736,18 @@ form{
 	}
 }
 
+.familiespic2{
+	max-width: 70%;
+	margin-top: 30px;
+	img{
+		box-shadow: none;
+		width: 100%;
+	}
+}
+
+.familiespic{
+	display: none;
+}
 /**mobile for homepage**/
 
 .bluestatbox{
@@ -677,6 +780,9 @@ form{
 	    bottom: 45px;
 	    text-transform: uppercase;
 	    font-size: 1em;
+	    &:hover{
+	    	opacity: 0.7;
+	    }
 	}
 	h3{
 		margin-top: 10px;
@@ -695,13 +801,17 @@ form{
 	}
 
 }
-
+.warrenpicture{
+	img{
+		width: 100%;
+	}
+}
 .warren{
 	text-align: center;
-	img{
-		display: block;
-		margin: 0 auto;
-	}
+	// img{
+	// 	display: block;
+	// 	margin: 0 auto;
+	// }
 	h4{
 		margin: 0px;
 		margin-top: 10px;
@@ -712,13 +822,22 @@ form{
 		font-size: 1.10em;
 	}
 }
-.quote{
-	text-align: center;
-	margin-top: 10px;
-	font-size: 1.10em;
+// .quote{
+// 	text-align: center;
+// 	margin-top: 10px;
+// 	font-size: 1.10em;
+// }
+
+.address{
+	li{
+		width: 100%;
+	}
 }
 
-
+.contact{
+	font-size: 0.7em;
+	margin-top: 30px;
+}
 /* Tablet Fatherhood */
 
 @media (min-width: 600px) {
@@ -731,6 +850,11 @@ form{
 			vertical-align: top;
 			margin-top: 25px;
 			margin-right: 10px;
+		}
+		article{
+			img{
+				width: 34%;
+			}
 		}
 
 		.mobileonly{
@@ -769,66 +893,52 @@ form{
 	}
 
 	.findprogram{
-		display: inline-block;
-		width: 45%;
-		border: 2px solid $grey;
+		display: block;
 		border-left: none;
 		padding: 45px 20px;
 	}
-	.donate{
-		width: 45%;
-    	display: inline-block;
-    	margin: 0px 0px 0px -4px;
-    	border: 2px solid $grey;
-    	border-left: none;
-    	border-right: none;
-    	padding: 28px 12px 25px 12.2px;
-		p{
-			display: block;
-			margin-bottom: 10px;
-		}
-	}
+	// .donate{
+	// 	width: 40%;
+ //    	display: inline-block;
+ //    	margin: 0px 0px 0px -4px;
+ //    	border: 2px solid $grey;
+ //    	border-left: none;
+ //    	border-right: none;
+ //    	padding: 6px 14px 25px 30px;
+	// 	p{
+	// 		display: block;
+	// 		margin-bottom: 10px;
+	// 	}
+	// }
+
 
 	.about, .email{
 		display: none;
 	}
 
 	.about2{
-		display: inline-block;
-		border-right: 2px solid $grey;
-		border-bottom: 2px solid $grey;
-    	padding: 20px;
-    	width: 45%;
-    	padding-top: 41px;
-	}
-
-	.email2{
 		display: block;
-		width: 45%;
-		float: right;
-		margin: 0px;
-		margin-right: 20px;
-
-		.fb, .twitter{
-			width: 30px;
-		}
-		.emailbutton{
-			padding: 7px 25px 7px 25px;
-		}
+		border-bottom: 2px solid $grey;
+    	padding: 30px;
+    	// padding-top: 41px;
+    	vertical-align: top;
+    	text-align: center;
 	}
 
 	.contact{
-		display: inline-block;
+		display: block;
 		font-size: 0.8em;
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 30px;
 		.address{
-			margin: 0px 20px;
+			width: 50%;
+			margin: 0px;
 		}
 	}
 
 	.legal{
-		border-right: 2px solid $grey;
-		display: inline-block;
-	    width: 45%;
+		display: block;
 	    margin: 0px;
 	    padding: 10px 30px 10px 10px;
 	}
@@ -879,51 +989,142 @@ form{
 			width: 60%;
 		}
 	}
-}
 
-
-/* tablet homepage8*/
-
-
-.news{
-
-	img{
-		width: 100%;
-		margin-top: 0px;
-		margin-bottom: 20px;
-	}
-	.news1, .news2{
-		width: 46%;
+	.footer-nav{
 		vertical-align: top;
-		a, p, h3{
-		font-size: 1em;
+		margin-left: 25px;
+		display: inline-block;
+	}
+
+
+
+	/* tablet homepage8*/
+
+
+	.news{
+
+		img{
+			width: 100%;
+			margin-top: 0px;
+			margin-bottom: 20px;
 		}
-		h3{
-			margin-bottom: 10px;
+		.news1, .news2{
+			width: 46%;
+			vertical-align: top;
+			a, p, h3{
+			font-size: 1em;
+			}
+			h3{
+				margin-bottom: 10px;
+			}
+			
+		}
+		.news1{
+			margin-right: 35px;
 		}
 		
+		.greybox{
+			padding: 10px 20px 30px 20px;
+		}
+
 	}
-	.news1{
+
+	.warren{
+		display: inline-block;
+		width: 48%;
+		vertical-align: top;
+		margin: 0px 15px;
+	}
+
+	.cd-hero{
+		.cd-slider-nav{
+			nav{
+				ul{
+					width: 40%;
+				}
+			}
+			li{
+				width: 10%;
+				margin-right: 52px;
+			}
+		}
+		li{
+			div{
+				margin: 13% auto;
+				h1{
+					font-size: 2em;
+					padding: 0px 15px;
+				}
+				p{
+					padding: 0px 15px;
+				}
+			}
+		}
+	}
+
+
+	.aboutcenter{
+		width: 40%;
+		display: inline-block;
+		vertical-align: top;
+		text-align: center;
+	}
+
+	.aboutpicture{
+		width: 50%;
+		display: inline-block;
+		margin-left: 45px;
+	}
+	.warrenpicture{
+		width: 40%;
+		float: right;
 		margin-right: 40px;
+		img{
+			width: 100%;
+		}
 	}
-	
-	.greybox{
-		padding: 10px 20px 30px 20px;
+
+.familiespic{
+	float: right;
+	margin-top: 30px;
+	display: block;
+	max-width: 70%;
+	img{
+		box-shadow: none;
+		width: 100%;
+	}
+}
+
+
+.familiespic2{
+	display: none;
+}
+
+}
+
+@media (min-width: 700px) {
+	.cd-hero{
+		.cd-slider-nav{
+
+			li{
+				max-width: 30px;
+				margin-right: 65px;
+				&:last-child{
+					margin-right: 0px;
+				}
+			}
+		}
 	}
 
 }
 
-.warren, .quote{
-	display: inline-block;
-	width: 45%;
-	vertical-align: top;
-}
-
-.warren{
-	margin-right: 40px;
-}
 
 
+// @media (min-width: 780px) {
+// 	.donate{
+//     	padding: 28px 40px 25px 30px;
+//     }
+// }
 
 /* desktop fatherhood */
 @media (min-width: 900px) {
@@ -937,12 +1138,20 @@ form{
 		background-repeat: repeat;
 	}
 
+	.header2{
+		.donatebutton{
+			bottom: 20px;
+		}
+	}
 	.greybox{
 		margin-bottom: 30px;
 		article{
 			display: inline-block;
 			width: 32.9%;
     		vertical-align: top;
+    		img{
+    			width: 85%;
+    		}
 
 		}
 
@@ -951,85 +1160,21 @@ form{
 		}
 	}
 
-	.donate{
-		display: none;
-	}
-
-	.donate2{
-		display: inline-block;
-		width: 40%;
-		margin: 0px;
-		vertical-align: bottom;
-		text-align: center;
-		padding: 77px 61px 96px 28px;
-		border: 2px solid $grey;
-		border-bottom: none;
-		border-right: none;
-		p{
-			display: inline-block;
-			font-size: 1.5em;
-		}
-		a{
-			margin-top: 30px;
-			width: 36%;
-			display: inline-block;
-		}
-	}
-
-	.findprogram{
-		margin-top: 0px;
-		border-top: none;
-		border-bottom: none;
-	}
 	footer{
 		position: relative;
 		border-top: 2px solid $grey;
 	}
 
 	.resourcesfooter{
-		width: 49%;
-		display: inline-block;
+		display: block;
 		.texture{
-			width: 101%;
-			border-top: 2px solid $grey;
+			width: 100%;
 		}
 		h2{
 			margin-top: 0px;
 		}
 	}
-	.email2{
-		float: none;
-		margin-right: -15px;
-		margin-left: 0px;
-		// border-bottom: 2px solid $grey;
-		position: absolute;
-		right: 48px;
-		top: 109px;
-	}
-	.contact{
-		float: none;
-		position: absolute;
-		right: 103px;
-		top: 10px;
-		// border-top: 2px solid $grey;
-		margin: 0px;
-	}
-
-	.about2{
-		display: block;
-		border-right: none;
-		border-top: 2px solid $grey;
-		padding-right: 100%;
-		padding-bottom: 50px;
-	}
-
-	.legal{
-		border-right: none;
-		float: none;
-		position: absolute;
-		right: 0px;
-		bottom: 25px;
-	}
+	
 
 	.advertisement{
 		p{
@@ -1083,6 +1228,20 @@ form{
 		}
 	}
 
+	.footer-nav{
+		float: right;
+		display: block;
+		margin-left: 25px;
+	}
+
+	.aboutcenter{
+		margin-top: 6%;
+	}
+
+
+	.warren{
+		width: 50%;
+	}
 
 //* Snippet of Families**//
 	.greyboxcontent{
@@ -1092,28 +1251,6 @@ form{
 	}
 
 
-	/** snippet of desktop hp */
-
-	// .cd-hero{
-	// 	.cd-slider-nav{
-	// 		li{
-	// 			width: 10%;
-	// 		}
-	// 	}
-	// }
-	.donatehp{
-		padding: 0px;
-		width: 100%;
-		margin-top: 30px;
-		p{
-			margin-top: 10px;
-		
-		}
-		a{
-			margin-top: 15px;
-			margin-bottom: 15px;
-		}
-	}
 	.bluestatbox{
 		padding: 100px;
 		a{
@@ -1124,8 +1261,60 @@ form{
 		.readmore{
 			display: block;
 			width: 100%;
-				
+		}
+	}
+
+	.cd-hero{
+		.cd-slider-nav{
+			nav{
+				ul{
+					width: 40%;
+				}
 			}
+			li{
+				margin-right: 100px;
+				&:last-child{
+					margin-right: 0px;
+				}
+			}
+		}
+		li{
+			div{
+				margin: 10% auto;
+				h1{
+					font-size: 2.5em;
+				}
+				p{
+					font-size: 1.4em;
+				}
+			}
+		}
+	}
+
+	.contact{
+		display: inline-block;
+		width: 43%;
+		margin-left: 20px;
+	}
+
+	.legal{
+		border-left: 2px solid $grey;
+		display: inline-block;
+		width: 45%;
+		margin-top: 30px;
+		vertical-align: top;
+	}
+
+	.emailnewsletter{
+		width: 3%;
+	}
+	.mainpic, .mainpicfamilies, .mainpicdonation{
+		h1{
+			font-size: 2.5em
+		}
+		p{
+			font-size: 1.4em;
+		}
 	}
 		
 }
